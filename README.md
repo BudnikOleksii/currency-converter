@@ -5,6 +5,7 @@
 - Redux Toolkit, Redux-Saga
 - CSS modules
 - Axios
+- Vitest (tests in progress)
 
 ### Project description
 This application offers you two main features:
@@ -14,8 +15,6 @@ This application offers you two main features:
 2. **Check Rates:** Get the latest exchange rates for any currency.
 
 We use the free plan of the [exchangeratesapi.io](https://exchangeratesapi.io/) service to get real-time exchange rates.
-
-This application is a free tool and was developed for educational purposes.
 
 ### Instructions how to run application locally:
 1. Clone the repository to your local machine, open terminal and clone repo with command bellow:
