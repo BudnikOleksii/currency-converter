@@ -6,6 +6,7 @@ import { selectNotificationInfo } from '../../../features/actions-info/actions-i
 import { NotificationsBlock } from '../../molecules/NotificationsBlock';
 import { symbolsLoadingStart } from '../../../features/currency/currency-slice';
 import { Navigation } from '../../organisms/Navigation';
+import { setDefaultStatus } from '../../../features/actions-info/actions-info-slice';
 
 export const MainLayout = () => {
   const dispatch = useAppDispatch();
@@ -18,6 +19,7 @@ export const MainLayout = () => {
   useEffect(() => {
     if (error) {
       toast.error(error.message);
+      dispatch(setDefaultStatus());
     }
   }, [error]);
 
