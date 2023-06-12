@@ -1,0 +1,7 @@
+.input {
+  max-width: 200px;
+  background-color: transparent;
+  font-size: 50px;
+  outline: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}

@@ -1,0 +1,22 @@
+.currency_block {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.heading_block {
+  position: absolute;
+  padding: 15px;
+  width: 100%;
+  color: #fff;
+}
+
+.heading {
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
