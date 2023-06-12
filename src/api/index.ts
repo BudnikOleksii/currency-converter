@@ -1,13 +1,13 @@
 import axios from 'axios';
 
 const API_KEY = import.meta.env.VITE_EXCHANGE_RATES_API_KEY;
-// const API_KEY = 'test';
-const BASE_URL = 'https://cors-anywhere.herokuapp.com/http://api.exchangeratesapi.io';
-const API_URL = BASE_URL + '/v1';
+const PROXY_URL = 'https://cors-anywhere.herokuapp.com/';
+const BASE_URL = 'http://api.exchangeratesapi.io';
+const API_URL = PROXY_URL + BASE_URL + '/v1';
 
 export const ENDPOINTS = {
   symbols: '/symbols',
-  convert: '/convert?',
+  convert: '/convert?', // Subscription Plan does not support this API Function
   latest: '/latest',
 };
 
@@ -24,5 +24,14 @@ $api.interceptors.request.use((config) => {
 
   return config;
 });
+
+$api.interceptors.response.use(
+  (config) => {
+    return config.data;
+  },
+  async (error) => {
+    throw error.response.data.error;
+  }
+);
 
 export default $api;

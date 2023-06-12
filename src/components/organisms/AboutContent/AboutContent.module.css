@@ -1,0 +1,32 @@
+.container {
+  padding: 20px;
+  color: #eee;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #0056b3;
+}
+
+.list {
+  padding: 20px 0;
+}

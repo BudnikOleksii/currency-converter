@@ -3,8 +3,8 @@ import { useSearchParams } from 'react-router-dom';
 import { baseCurrencies, selectStyles } from '../../../constants';
 import { SelectStyles } from '../../../types/styles';
 import styles from './CurrencySelect.module.css';
-
-const currencySymbols = ['USD', 'EUR', 'UAH', 'AUH', 'ROM'];
+import { useAppSelector } from '../../../app/hooks';
+import { selectSymbols } from '../../../features/currency/currency-selectors';
 
 type Props = {
   currencyType: keyof SelectStyles;
@@ -12,6 +12,7 @@ type Props = {
 
 export const CurrencySelect: FC<Props> = ({ currencyType }) => {
   const [searchParams, setSearchParams] = useSearchParams();
+  const symbols = useAppSelector(selectSymbols);
   const baseCurrency = baseCurrencies[currencyType];
 
   const [selectedCurrency, setSelectedCurrency] = useState(
@@ -42,7 +43,7 @@ export const CurrencySelect: FC<Props> = ({ currencyType }) => {
         className={styles.select}
         style={selectStyles[currencyType]}
       >
-        {currencySymbols.map((symbol) => (
+        {symbols.map((symbol) => (
           <option key={symbol} value={symbol}>
             {symbol}
           </option>
