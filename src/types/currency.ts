@@ -23,3 +23,8 @@ export interface RatesResponse {
   success: boolean;
   timestamp: number;
 }
+
+export interface RatesObject {
+  currency: string;
+  rate: number;
+}

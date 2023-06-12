@@ -30,7 +30,7 @@ $api.interceptors.response.use(
     return config.data;
   },
   async (error) => {
-    throw error.response.data;
+    throw error.response.data.error;
   }
 );
 

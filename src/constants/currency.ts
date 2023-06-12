@@ -1,6 +1,6 @@
 export const baseCurrencies = {
   from: 'USD',
-  to: 'EUR',
+  to: 'UAH',
 };
 
 export const AMOUNT_PARAM = 'amount';

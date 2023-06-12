@@ -1,4 +1,5 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import actionsInfoReducer from '../features/actions-info/actions-info-slice';
 import currencyReducer from '../features/currency/currency-slice';
 import createSagaMiddleware from 'redux-saga';
 import IndexSaga from './sagas';
@@ -7,6 +8,7 @@ const sagaMiddleware = createSagaMiddleware();
 
 export const store = configureStore({
   reducer: {
+    actionsInfo: actionsInfoReducer,
     currency: currencyReducer,
   },
   middleware: (getDefaultMiddleware) =>

@@ -1,27 +1,37 @@
-# vite-template-redux
+# Currency converter app
 
-Uses [Vite](https://vitejs.dev/), [Vitest](https://vitest.dev/), and [React Testing Library](https://github.com/testing-library/react-testing-library) to create a modern [React](https://react.dev/) app compatible with [Create React App](https://create-react-app.dev/)
+### Technologies used:
+- React with Typescript
+- Redux Toolkit, Redux-Saga
+- CSS modules
+- Axios
 
-```sh
-npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
+### Project description
+This application offers you two main features:
+
+1. **Currency Converter:** Convert any amount from one currency to another.
+
+2. **Check Rates:** Get the latest exchange rates for any currency.
+
+We use the free plan of the [exchangeratesapi.io](https://exchangeratesapi.io/) service to get real-time exchange rates.
+
+This application is a free tool and was developed for educational purposes.
+
+### Instructions how to run application locally:
+1. Clone the repository to your local machine, open terminal and clone repo with command bellow:
+```bash 
+git clone https://github.com/BudnikOleksii/currency-converter.git
 ```
-
-## Goals
-
-- Easy migration from Create React App or Vite
-- As beginner friendly as Create React App
-- Optimized performance compared to Create React App
-- Customizable without ejecting
-
-## Scripts
-
-- `dev`/`start` - start dev server and open browser
-- `build` - build for production
-- `preview` - locally preview production build
-- `test` - launch test runner
-
-## Inspiration
-
-- [Create React App](https://github.com/facebook/create-react-app/tree/main/packages/cra-template)
-- [Vite](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react)
-- [Vitest](https://github.com/vitest-dev/vitest/tree/main/examples/react-testing-lib)
+2. Open project in terminal:
+```bash 
+cd currency-converter
+```
+3. Set up dependencies:
+```bash 
+npm install
+```
+4. Run project by command:
+```bash 
+npm start
+```
+5. Open application in your browser `http://127.0.0.1:5173/`

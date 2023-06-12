@@ -20,7 +20,7 @@ const currencySlice = createSlice({
     symbolsSuccess: (state, action: PayloadAction<Symbols>) => {
       state.symbols = Object.keys(action.payload);
     },
-    ratesLoadingStart: (state, action: PayloadAction<{ cbase: Maybe<string> }>) => {},
+    ratesLoadingStart: (state, action: PayloadAction<{ base: Maybe<string> }>) => {},
     ratesSuccess: (state, action: PayloadAction<Rates>) => {
       state.rates = action.payload;
     },

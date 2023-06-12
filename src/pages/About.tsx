@@ -1,9 +1,10 @@
 import { Page } from '../components/templates/Page';
+import { AboutContent } from '../components/organisms/AboutContent';
 
 const About = () => {
   return (
     <Page>
-      <div> About </div>
+      <AboutContent />
     </Page>
   );
 };
