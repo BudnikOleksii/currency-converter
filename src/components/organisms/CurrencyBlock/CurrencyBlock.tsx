@@ -21,12 +21,10 @@ export const CurrencyBlock = () => {
   const date = formatDate(new Date());
 
   useEffect(() => {
-    const currencyFrom = searchParams.get(CurrencyTypes.from) || baseCurrencies.from;
     const currencyTo = searchParams.get(CurrencyTypes.to) || baseCurrencies.to;
     const amount = searchParams.get(AMOUNT_PARAM) || DEFAULT_AMOUNT;
 
     setSearchParams((prevParams) => {
-      prevParams.set(CurrencyTypes.from, currencyFrom);
       prevParams.set(CurrencyTypes.to, currencyTo);
       prevParams.set(AMOUNT_PARAM, amount);
 

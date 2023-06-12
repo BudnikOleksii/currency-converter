@@ -1,12 +1,12 @@
 import { useSearchParams } from 'react-router-dom';
 import { useEffect } from 'react';
-import { convertCurrency, getRates } from '../../../api/currency';
+import { convertCurrency, getRates, getSymbols } from '../../../api/currency';
 
 export const ExchangeResults = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   // useEffect(() => {
-  //   getRates()
+  //   getSymbols()
   //     .then((res) => {
   //       console.log(res);
   //     })
