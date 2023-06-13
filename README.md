@@ -14,7 +14,9 @@ This application offers you two main features:
 
 2. **Check Rates:** Get the latest exchange rates for any currency.
 
-We use the free plan of the [exchangeratesapi.io](https://exchangeratesapi.io/) service to get real-time exchange rates.
+Any changes to the input will take effect only after a delay of 500 milliseconds, because of debounce(it helps to avoid so many calculations or requests). This means that the system won't instantly reflect your modifications; instead, it will wait for half a second before updating the results.
+
+We use the free plan of the [exchangeratesapi.io](https://exchangeratesapi.io/) service to get real-time exchange rates. Some of the endpoints unavailable for the free plan.
 
 ### Instructions how to run application locally:
 1. Clone the repository to your local machine, open terminal and clone repo with command bellow:
@@ -29,7 +31,7 @@ cd currency-converter
 ```bash 
 npm install
 ```
-4. Add .env file to the project's root folder with variable or use your own API key if you have an account in for exchangeratesapi:
+4. Add .env file to the project's root folder with variable or use your own API key if you have an account on [exchangeratesapi.io](https://exchangeratesapi.io/):
 ``` 
 VITE_EXCHANGE_RATES_API_KEY=0236102a833132b4be80d51aaabf3c9e
 ```
