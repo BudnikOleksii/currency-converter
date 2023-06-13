@@ -10,15 +10,17 @@ import { ratesLoadingStart, symbolsLoadingStart } from '../features/currency/cur
 import { selectIsActionInProcess } from '../features/actions-info/actions-info-selector';
 import { selectRates } from '../features/currency/currency-selectors';
 import { CurrencyTypes } from '../types/currency';
-import { backgrounds, baseCurrencies, colors } from '../constants';
+import { AMOUNT_PARAM, backgrounds, baseCurrencies, colors, DEFAULT_AMOUNT } from '../constants';
 import { Loader } from '../components/atoms/Loader';
+import { AmountInput } from '../components/molecules/AmountInput';
 
 const Rates = () => {
   const dispatch = useAppDispatch();
   const [searchParams, setSearchParams] = useSearchParams();
   const currencyFrom = searchParams.get(CurrencyTypes.from) || baseCurrencies.from;
+  const amount = Number(searchParams.get(AMOUNT_PARAM) || DEFAULT_AMOUNT);
 
-  const rates = useAppSelector(selectRates);
+  const rates = useAppSelector(selectRates(amount));
   const isLoading = useAppSelector(selectIsActionInProcess(ratesLoadingStart.type));
 
   useEffect(() => {
@@ -38,6 +40,7 @@ const Rates = () => {
     <Page>
       <CurrencyBlock>
         <CurrencyContainer background={backgrounds.gradient} color={colors.white}>
+          <AmountInput />
           <CurrencySelect currencyType={CurrencyTypes.from} />
         </CurrencyContainer>
 

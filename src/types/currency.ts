@@ -26,5 +26,5 @@ export interface RatesResponse {
 
 export interface RatesObject {
   currency: string;
-  rate: number;
+  rate: string;
 }

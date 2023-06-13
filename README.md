@@ -29,8 +29,12 @@ cd currency-converter
 ```bash 
 npm install
 ```
-4. Run project by command:
+4. Add .env file to the project's root folder with variable or use your own API key if you have an account in for exchangeratesapi:
+``` 
+VITE_EXCHANGE_RATES_API_KEY=0236102a833132b4be80d51aaabf3c9e
+```
+5. Run project by command:
 ```bash 
 npm start
 ```
-5. Open application in your browser `http://127.0.0.1:5173/`
+6. Open application in your browser `http://127.0.0.1:5173/`
