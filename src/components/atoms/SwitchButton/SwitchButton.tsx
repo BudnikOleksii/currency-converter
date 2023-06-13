@@ -1,7 +1,8 @@
-import styles from './SwitchButton.module.css';
 import { baseCurrencies, colors } from '../../../constants';
 import { useSearchParams } from 'react-router-dom';
 import { CurrencyTypes } from '../../../types/currency';
+
+import styles from './SwitchButton.module.css';
 
 export const SwitchButton = () => {
   const [searchParams, setSearchParams] = useSearchParams();

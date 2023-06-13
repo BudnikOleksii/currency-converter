@@ -25,9 +25,6 @@ export const AboutContent = () => {
         </a>{' '}
         service to get real-time exchange rates.
       </p>
-      <p className={styles.text}>
-        This application is a free tool and was developed for educational purposes.
-      </p>
     </article>
   );
 };

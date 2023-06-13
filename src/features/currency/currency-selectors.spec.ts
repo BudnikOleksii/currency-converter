@@ -12,11 +12,12 @@ describe('currencySelectors', () => {
 
   describe('selectRates', () => {
     it('returns rates as array of objects', () => {
-      const rates = selectRates(mockState);
+      const amount = 1;
+      const rates = selectRates(amount)(mockState);
 
       const expectedRates = Object.keys(mockRates).map((key) => ({
         currency: key,
-        rate: mockRates[key],
+        rate: (mockRates[key] * amount).toFixed(2),
       }));
 
       expect(rates).toEqual(expectedRates);

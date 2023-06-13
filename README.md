@@ -5,7 +5,7 @@
 - Redux Toolkit, Redux-Saga
 - CSS modules
 - Axios
-- Vitest (tests in progress)
+- Vitest
 
 ### Project description
 This application offers you two main features:
