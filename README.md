@@ -40,3 +40,100 @@ VITE_EXCHANGE_RATES_API_KEY=0236102a833132b4be80d51aaabf3c9e
 npm start
 ```
 6. Open application in your browser `http://127.0.0.1:5173/`
+
+### Tests coverage report
+
+- Test Files  21 passed (21)
+-     Tests  35 passed (35)
+-  Start at  21:09:26
+-  Duration  7.39s (transform 2.29s, setup 9.13s, collect 9.82s, tests 1.63s, environment 29.26s, prepare 8.17s)
+
+ % Coverage report from c8
+
+------------------------------------------|---------|----------|---------|---------|-------------------
+File                                      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+------------------------------------------|---------|----------|---------|---------|-------------------
+All files                                 |   98.01 |     92.5 |   94.33 |   98.01 |                  
+ src                                      |     100 |      100 |     100 |     100 |                  
+  setupTests.ts                           |     100 |      100 |     100 |     100 |                  
+ src/app                                  |     100 |      100 |     100 |     100 |                  
+  hooks.ts                                |     100 |      100 |     100 |     100 |                  
+ src/app/sagas                            |   96.63 |      100 |   66.66 |   96.63 |                  
+  currency.spec.ts                        |     100 |      100 |     100 |     100 |                  
+  currency.ts                             |    92.3 |      100 |   66.66 |    92.3 | 47-50            
+ src/components/atoms/Container           |     100 |      100 |     100 |     100 |                  
+  Container.spec.tsx                      |     100 |      100 |     100 |     100 |                  
+  Container.tsx                           |     100 |      100 |     100 |     100 |                  
+  index.ts                                |     100 |      100 |     100 |     100 |                  
+ src/components/atoms/CurrencyContainer   |     100 |      100 |     100 |     100 |                  
+  CurrencyContainer.spec.tsx              |     100 |      100 |     100 |     100 |                  
+  CurrencyContainer.tsx                   |     100 |      100 |     100 |     100 |                  
+ src/components/atoms/Loader              |     100 |      100 |     100 |     100 |                  
+  Loader.spec.tsx                         |     100 |      100 |     100 |     100 |                  
+  Loader.tsx                              |     100 |      100 |     100 |     100 |                  
+  index.ts                                |     100 |      100 |     100 |     100 |                  
+ src/components/atoms/SwitchButton        |     100 |    77.77 |     100 |     100 |                  
+  SwitchButton.spec.tsx                   |     100 |      100 |     100 |     100 |                  
+  SwitchButton.tsx                        |     100 |       60 |     100 |     100 | 11-12            
+ src/components/layouts/MainLayout        |     100 |      100 |     100 |     100 |                  
+  MainLayout.spec.tsx                     |     100 |      100 |     100 |     100 |                  
+  MainLayout.tsx                          |     100 |      100 |     100 |     100 |                  
+ src/components/molecules/CurrencyRow     |     100 |      100 |     100 |     100 |                  
+  CurrencyRow.spec.tsx                    |     100 |      100 |     100 |     100 |                  
+  CurrencyRow.tsx                         |     100 |      100 |     100 |     100 |                  
+  index.ts                                |     100 |      100 |     100 |     100 |                  
+ src/components/organisms/AboutContent    |     100 |      100 |     100 |     100 |                  
+  AboutContent.spec.tsx                   |     100 |      100 |     100 |     100 |                  
+  AboutContent.tsx                        |     100 |      100 |     100 |     100 |                  
+ src/components/organisms/CurrencyBlock   |     100 |      100 |     100 |     100 |                  
+  CurrencyBlock.spec.tsx                  |     100 |      100 |     100 |     100 |                  
+  CurrencyBlock.tsx                       |     100 |      100 |     100 |     100 |                  
+ src/components/organisms/CurrencyTable   |   79.24 |       75 |     100 |   79.24 |                  
+  CurrencyTable.spec.tsx                  |      56 |    66.66 |     100 |      56 | 7-17             
+  CurrencyTable.tsx                       |     100 |      100 |     100 |     100 |                  
+  index.ts                                |     100 |      100 |     100 |     100 |                  
+ src/components/organisms/ExchangeResults |   68.57 |    42.85 |     100 |   68.57 |                  
+  ExchangeResults.spec.tsx                |    42.1 |       50 |     100 |    42.1 | 7-8,10-18        
+  ExchangeResults.tsx                     |     100 |    33.33 |     100 |     100 | 10-11            
+ src/components/organisms/Navigation      |     100 |      100 |     100 |     100 |                  
+  Navigation.spec.tsx                     |     100 |      100 |     100 |     100 |                  
+  Navigation.tsx                          |     100 |      100 |     100 |     100 |                  
+ src/components/templates/Page            |     100 |      100 |     100 |     100 |                  
+  Page.spec.tsx                           |     100 |      100 |     100 |     100 |                  
+  Page.tsx                                |     100 |      100 |     100 |     100 |                  
+  index.ts                                |     100 |      100 |     100 |     100 |                  
+ src/constants                            |     100 |      100 |     100 |     100 |                  
+  colors.ts                               |     100 |      100 |     100 |     100 |                  
+  currency.ts                             |     100 |      100 |     100 |     100 |                  
+  index.ts                                |     100 |      100 |     100 |     100 |                  
+  paths.ts                                |     100 |      100 |     100 |     100 |                  
+ src/features/actions-info                |     100 |      100 |     100 |     100 |                  
+  actions-info-selector.spec.ts           |     100 |      100 |     100 |     100 |                  
+  actions-info-selector.ts                |     100 |      100 |     100 |     100 |                  
+  actions-info-slice.spec.ts              |     100 |      100 |     100 |     100 |                  
+  actions-info-slice.ts                   |     100 |      100 |     100 |     100 |                  
+ src/features/currency                    |     100 |    95.45 |   71.42 |     100 |                  
+  currency-selectors.spec.ts              |     100 |      100 |     100 |     100 |                  
+  currency-selectors.ts                   |     100 |    85.71 |     100 |     100 | 27               
+  currency-slice.spec.ts                  |     100 |      100 |     100 |     100 |                  
+  currency-slice.ts                       |     100 |      100 |      50 |     100 |                  
+ src/helpers                              |     100 |      100 |     100 |     100 |                  
+  format-date.ts                          |     100 |      100 |     100 |     100 |                  
+  index.ts                                |     100 |      100 |     100 |     100 |                  
+  test-utils.tsx                          |     100 |      100 |     100 |     100 |                  
+ src/mock-data                            |     100 |      100 |     100 |     100 |                  
+  currency.ts                             |     100 |      100 |     100 |     100 |                  
+  index.ts                                |     100 |      100 |     100 |     100 |                  
+  state.ts                                |     100 |      100 |     100 |     100 |                  
+ src/pages                                |     100 |    93.75 |     100 |     100 |                  
+  About.spec.tsx                          |     100 |      100 |     100 |     100 |                  
+  About.tsx                               |     100 |      100 |     100 |     100 |                  
+  Home.spec.tsx                           |     100 |      100 |     100 |     100 |                  
+  Home.tsx                                |     100 |      100 |     100 |     100 |                  
+  NotFound.spec.tsx                       |     100 |      100 |     100 |     100 |                  
+  NotFound.tsx                            |     100 |      100 |     100 |     100 |                  
+  Rates.spec.tsx                          |     100 |      100 |     100 |     100 |                  
+  Rates.tsx                               |     100 |     62.5 |     100 |     100 | 49               
+ src/types                                |     100 |      100 |     100 |     100 |                  
+  currency.ts                             |     100 |      100 |     100 |     100 |                  
+------------------------------------------|---------|----------|---------|---------|-------------------
