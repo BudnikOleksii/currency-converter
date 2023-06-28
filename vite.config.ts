@@ -18,7 +18,11 @@ export default defineConfig({
     mockReset: true,
     coverage: {
       provider: 'c8',
-      exclude: [...configDefaults.exclude, 'src/api/**'],
+      exclude: [
+        ...configDefaults.exclude,
+        '**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}',
+        'src/api/**',
+      ],
     },
   },
 });

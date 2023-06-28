@@ -31,12 +31,14 @@ cd currency-converter
 ```bash 
 npm install
 ```
-4. Add .env file to the project's root folder with variable or use your own API key if you have an account on [exchangeratesapi.io](https://exchangeratesapi.io/):
+4. Get your API key for [exchangeratesapi.io](https://exchangeratesapi.io/) service, add .env file to the project's root folder, and add variable with yours api key to it:
 ``` 
-VITE_EXCHANGE_RATES_API_KEY=0236102a833132b4be80d51aaabf3c9e
+VITE_EXCHANGE_RATES_API_KEY=api_key
 ```
-5. Run project by command:
+5. Current API have problems with CORS policy and needs a proxy to handle it. Please, open the [cors-anywhere](https://cors-anywhere.herokuapp.com/corsdemo) and click "Request temporary access to the demo server" button, it's free proxy that fixes error.
+6. Run project by command:
 ```bash 
 npm start
 ```
-6. Open application in your browser `http://127.0.0.1:5173/`
+7. Open application in your browser `http://127.0.0.1:5173/`
+
